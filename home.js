@@ -19,7 +19,7 @@ function checkInputs() {
 
    if (usernameValue === '') {
        //show error
-       //add error class
+       //add error class for username
        setErrorFor(username, 'Name cannot be blank');
 
    } else {
@@ -27,7 +27,7 @@ function checkInputs() {
        setSuccessFor(username);
    }
 
-
+   //error class for email
    if (emailValue === '') {
        setErrorFor(email, 'Email cannont be blank');
    } else if(!isEmail(emailValue)) {
@@ -62,22 +62,12 @@ function isEmail(email) {
 
 
 }
-// On click(Jquery)
+//Event listener 'te pohaku'
 
-$('#clickMe').on('click', function() {
+let therock = document.getElementById('changeMe')
 
-    $('#changeMe').css('background-image', 'url(Photos/theRock.webp)');
-
-
-
-})
-
-
-
-
-//mouseout
-
-
+therock.addEventListener('mouseover', () => therock.style.backgroundImage = 'url(Photos/theRock.webp)')
+therock.addEventListener('mouseout', () => therock.style.backgroundImage = '')
     
 
 // countdown timer
@@ -94,10 +84,10 @@ let myfunc = setInterval(function() {
     let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
     
-    document.getElementById("days").innerHTML = days + "d "
-    document.getElementById("hours").innerHTML = hours + "h " 
-    document.getElementById("mins").innerHTML = minutes + "m " 
-    document.getElementById("secs").innerHTML = seconds + "s"
+    document.getElementById("days").innerHTML = days + " days "
+    document.getElementById("hours").innerHTML = hours + " hours " 
+    document.getElementById("mins").innerHTML = minutes + " mins " 
+    document.getElementById("secs").innerHTML = seconds + " secs"
 
     //Once timers Run Out shows this
     
@@ -111,6 +101,12 @@ let myfunc = setInterval(function() {
     }
 }, 1000)
 
+//loop 
+
+for (let i = 1; i <= 30; i++) {
+    console.log(''),
+    console.log('Follow Me on LinkedIn and Github');
+}
 
 
 
@@ -118,6 +114,5 @@ let myfunc = setInterval(function() {
 
 
 
-//To do list
-//Use of Loops
+
 

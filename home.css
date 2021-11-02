@@ -363,21 +363,37 @@ background-image:url(https://coolbackgrounds.io/images/backgrounds/index/compute
     justify-content: space-around;
 
 }
+.footer i {
+    margin-left: 4px;
+}
 
 
 #count {
-    color:rgb(239, 234, 240);
+    color:rgb(246, 248, 248);
     text-decoration: underline;
 }
 .countdown > p{
     display: inline;
   font-size: 20px;
   margin-top: 0px;
-  color: rgb(240, 240, 240);
+  color: rgb(253, 253, 253);
 }
 
 .countdown > h2 {
     font-size: 15px;
+}
+
+.navBot{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.navBot a {
+    text-decoration: none;
+    margin-top: 3px;
 }
 
 /* RWD for images */
